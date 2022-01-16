@@ -26,7 +26,7 @@ class Login(generics.GenericAPIView):
 
     def post(self, request):
         r = requests.post(
-            'http://127.0.0.1:8000/auth/o/token/',
+            'https://djano-test-heroku.herokuapp.com/auth/o/token/',
             data={
                 'grant_type': 'password',
                 'username': request.data.get('username'),
