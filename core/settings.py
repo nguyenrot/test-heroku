@@ -13,25 +13,19 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 
 import django_heroku
-import environ
 import os
-
-env = environ.Env(
-    DEBUG=(bool, False)
-)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-environ.Env.read_env(os.path.join(BASE_DIR, 'core/config.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = "django-insecure-(155j!ks-8yd%9$@jxxw6h0vm5+5qi62w(wcbzdw@nusxt@i3r"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+DEBUG = "True"
 
 ALLOWED_HOSTS = ['djano-test-heroku.herokuapp.com']
 
@@ -111,11 +105,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST'),
-        'PORT': env('DB_PORT'),
+        'NAME': "d6o6v7afhc5go0",
+        'USER': "rlkmflcudplspj",
+        'PASSWORD': "4a2babbe3a360ddea86010e56b7b8b7cf2462613f1d3409dbc63a4ea62a830e1",
+        'HOST': "ec2-18-234-17-166.compute-1.amazonaws.com",
+        'PORT': "5432",
     }
 }
 
@@ -163,7 +157,7 @@ django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = env('EMAIL_PORT')
-EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "nguyenrotpham@gmail.com"
+EMAIL_HOST_PASSWORD = "0935046139"
