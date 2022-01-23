@@ -104,10 +104,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "d6o6v7afhc5go0",
-        'USER': "rlkmflcudplspj",
-        'PASSWORD': "4a2babbe3a360ddea86010e56b7b8b7cf2462613f1d3409dbc63a4ea62a830e1",
-        'HOST': "ec2-18-234-17-166.compute-1.amazonaws.com",
+        'NAME': "d8vp1t3r651m8v",
+        'USER': "pyrmxenrvuxopd",
+        'PASSWORD': "7796c7df351878a247e45e62197b0b30b42b34dbb3658304b5f22e022876f449",
+        'HOST': "ec2-52-45-83-163.compute-1.amazonaws.com",
         'PORT': "5432",
     }
 }
@@ -156,7 +156,7 @@ django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST = "mail.newhome.tk"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "nguyenrotpham@gmail.com"
-EMAIL_HOST_PASSWORD = "0935046139"
+EMAIL_HOST_USER = "noreply@newhome.tk"
+EMAIL_HOST_PASSWORD = "1345"
